@@ -1,0 +1,44 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url(img/bg.jpg);
+}
+h1 {
+  margin-bottom: 2rem;
+}
+.card {
+  margin-bottom: 1.5rem;
+}
+.card-title {
+  color: #007bff;
+}
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn-primary:hover {
+  background-color: #0062cc;
+  border-color: #0062cc;
+}
+.image {
+  height: 50px;
+  width: 50px;
+}
+.image > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+.card-title {
+  float: left;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.logo {
+  height: 80px;
+  width: 80px;
+}
+.logo > img {
+  height: 100%;
+  width: 100%;
+}

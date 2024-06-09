@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h2, h4, h5 {
+            font-family: 'Nunito Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="logo"><img src="./img/logo.png" alt=""></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./register.html">See a doctor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./contacts.html">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./reviews.html">Reviews</a>
+                    </li>
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            My account
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end"> 
+                            <div class="login-container">
+                                <form action="#" method="POST">
+                                    <div class="input-group">
+                                        <label for="username">Login</label>
+                                        <input type="text" id="username" name="username" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" name="password" required>
+                                    </div>
+                                    <button type="submit" class="lb bg-primary">Login</button>
+                                </form>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+      <div class="content">
+        <div class="container gx-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>EverWhite Dental Clinic</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-start welcome">At EverWhite Dental Clinic, we are dedicated to providing you with the highest quality dental care in a warm and welcoming environment. Our team of experienced and compassionate dental professionals is here to ensure your comfort and well-being during every visit. Whether you need a routine check-up, a cosmetic procedure, or advanced dental treatment, we offer a comprehensive range of services tailored to meet your unique needs. Our state-of-the-art facility is equipped with the latest technology to deliver precise and effective care, ensuring that your smile remains healthy and beautiful.</p>
+                </div>
+            </div>
+            <div class="row text-center mb-4 gx-5">
+                <h4>The most popular services at our clinic</h4>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="item bg-body-tertiary">
+                        <div class="image"><img src="./img/consultation.jpg" alt=""></div>
+                        <h5 class="card-title">See a doctor</h5>
+                        <p class="card-text">Seeing a dentist regularly offers numerous benefits for your oral health and overall well-being. Here are some key benefits:</p>
+                        <button type="button" class="details btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            See details
+                        </button>
+                        <div class="modal custom-modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog custom-modal-dialog">
+                                <div class="modal-content custom-modal-content">
+                                    <div class="modal-header custom-modal-header">
+                                        <h5 class="modal-title custom-modal-title" id="exampleModalLabel">Benefits of Regular Dental Care</h5>
+                                        <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body custom-modal-body">
+                                        <p><strong>Prevention of Dental Issues:</strong> Regular dental check-ups help prevent dental problems such as cavities, gum disease, and oral cancer. Dentists can detect early signs of these issues and provide timely treatment, preventing them from worsening.</p>
+                                        <p><strong>Professional Teeth Cleaning:</strong> Dental cleanings performed by a dentist or dental hygienist remove plaque and tartar buildup that cannot be removed by regular brushing and flossing alone. This helps prevent tooth decay and gum disease.</p>
+                                        <p><strong>Early Detection of Dental Problems:</strong> Dental check-ups include examinations of the teeth, gums, and mouth, allowing dentists to identify any signs of dental problems early on. Early detection enables prompt treatment, preventing complications and saving teeth.</p>
+                                        <p><strong>Oral Health Education:</strong> Dentists provide valuable guidance on proper oral hygiene practices, including brushing techniques, flossing methods, and the importance of a balanced diet for oral health. They can also offer advice on habits such as smoking cessation, which can negatively impact oral health.</p>
+                                        <p><strong>Treatment for Bad Breath:</strong> Persistent bad breath (halitosis) can be a sign of underlying dental issues such as gum disease, cavities, or dry mouth. Dentists can diagnose the cause of bad breath and recommend appropriate treatment to address the underlying problem.</p>
+                                        <p><strong>Improved Appearance:</strong> Cosmetic dental procedures such as teeth whitening, veneers, and braces can improve the appearance of your smile, boosting your confidence and self-esteem.</p>
+                                        <p><strong>Overall Health Benefits:</strong> Oral health is closely linked to overall health. Poor oral health has been associated with various systemic conditions, including cardiovascular disease, diabetes, and respiratory infections. By maintaining good oral hygiene and seeing a dentist regularly, you can help reduce the risk of these health problems.</p>
+                                        <p><strong>Preservation of Natural Teeth:</strong> With proper care and regular dental visits, you can preserve your natural teeth for as long as possible, avoiding the need for extensive dental treatments such as extractions and dental implants.</p>
+                                    </div>
+                                    <div class="modal-footer custom-modal-footer">
+                                        <button type="button" class="btn btn-secondary custom-btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="item bg-body-tertiary">
+                        <div class="image"><img src="./img/braces.jpg" alt=""></div>
+                        <h5 class="card-title">Put on braces</h5>
+                        <p class="card-text">Putting on braces, also known as orthodontic treatment, offers several benefits:</p>
+                        <button type="button" class="details btn btn-primary  btop" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            See details
+                        </button>
+                        <div class="modal custom-modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog custom-modal-dialog">
+                                <div class="modal-content custom-modal-content">
+                                    <div class="modal-header custom-modal-header">
+                                        <h5 class="modal-title custom-modal-title" id="exampleModalLabel">Benefits of Putting on Braces</h5>
+                                        <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body custom-modal-body">
+                                        <p><strong>Alignment of Teeth:</strong> Braces gradually move misaligned or crooked teeth into their correct positions, improving both function and aesthetics.</p>
+                                        <p><strong>Correction of Bite Issues:</strong> Braces can correct various bite issues such as overbite, underbite, crossbite, and open bite, improving bite function and reducing the risk of TMJ disorders.</p>
+                                        <p><strong>Prevention of Dental Problems:</strong> Properly aligned teeth are easier to clean and maintain, reducing the risk of dental issues such as cavities, gum disease, and tooth decay.</p>
+                                        <p><strong>Improved Oral Health:</strong> Braces not only straighten teeth but also improve overall oral health by alleviating strain on the jaw and reducing the risk of abnormal wear and tear on tooth surfaces.</p>
+                                        <p><strong>Enhanced Confidence:</strong> Braces can improve the appearance of your smile, boosting your self-esteem and confidence.</p>
+                                        <p><strong>Long-Term Benefits:</strong> Investing in orthodontic treatment with braces provides long-term benefits for oral health and overall well-being, reducing the need for extensive dental work in the future.</p>
+                                        <p><strong>Functional Improvement:</strong> Braces can improve the function of your teeth and jaws, leading to better chewing and speech abilities.</p>
+                                        <p><strong>Prevention of Future Problems:</strong> Addressing alignment issues with braces early on can prevent more serious dental problems from developing later in life, avoiding more complex and costly treatments.</p>
+                                    </div>
+                                    <div class="modal-footer custom-modal-footer">
+                                        <button type="button" class="btn btn-secondary custom-btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center mb-4 gx-5">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="item bg-body-tertiary">
+                        <div class="image"><img src="./img/veneers.jpg" alt=""></div>
+                        <h5 class="card-title">Getting a dental veneers</h5>
+                        <p class="card-text">Getting dental veneers offers:</p>
+                        <button type="button" class="details btn btn-primary  btop" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                            See details
+                        </button>
+                        <div class="modal custom-modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog custom-modal-dialog">
+                                <div class="modal-content custom-modal-content">
+                                    <div class="modal-header custom-modal-header">
+                                        <h5 class="modal-title custom-modal-title" id="exampleModalLabel">Benefits of Getting Dental Veneers</h5>
+                                        <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body custom-modal-body">
+                                        <p><strong>Enhanced Smile:</strong> Dental veneers can significantly improve the appearance of your smile by covering up imperfections such as stains, discoloration, chips, or cracks in your teeth. They can give you a brighter, more even, and aesthetically pleasing smile.</p>
+                                        <p><strong>Natural Appearance:</strong> Veneers are custom-made to match the color, shape, and size of your natural teeth, providing a seamless and natural-looking result. They blend seamlessly with your existing teeth, making them virtually indistinguishable.</p>
+                                        <p><strong>Minimal Tooth Alteration:</strong> Compared to other dental procedures like crowns or implants, veneers require minimal alteration of the natural tooth structure. Only a small amount of enamel is removed from the front surface of the tooth to accommodate the veneer, preserving more of your natural tooth structure.</p>
+                                        <p><strong>Stain-Resistant:</strong> Veneers are made from high-quality materials that are resistant to stains from coffee, tea, wine, and other common sources of discoloration. This means your smile can stay bright and vibrant for years to come with proper care.</p>
+                                        <p><strong>Durability:</strong> Dental veneers are durable and long-lasting when properly cared for. With good oral hygiene practices and regular dental check-ups, veneers can last for 10-15 years or even longer.</p>
+                                        <p><strong>Improved Self-Confidence:</strong> Having a beautiful smile can boost your self-esteem and confidence. Dental veneers can give you the confidence to smile more freely and engage in social interactions without feeling self-conscious about the appearance of your teeth.</p>
+                                        <p><strong>Versatility:</strong> Veneers can address a variety of cosmetic dental issues, including gaps between teeth, misaligned teeth, uneven teeth, and worn enamel. They offer a versatile solution for enhancing the overall appearance of your smile.</p>
+                                        <p><strong>Quick Results:</strong> Unlike orthodontic treatments that can take months or even years to achieve desired results, veneers can typically be placed in just a few visits to the dentist, providing a quick and effective solution for improving your smile.</p>
+                                    </div>
+                                    <div class="modal-footer custom-modal-footer">
+                                        <button type="button" class="btn btn-secondary custom-btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="item bg-body-tertiary">
+                        <div class="image"><img src="./img/cleaning.jpg" alt=""></div>
+                        <h5 class="card-title">Ultrasonic teeth cleaning</h5>
+                        <p class="card-text">Ultrasonic teeth cleaning is a dental procedure that uses ultrasonic vibrations to remove plaque, tartar, and bacteria from the teeth and gums.</p>
+                        <button type="button" class="details btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                            See details
+                        </button>
+                        <div class="modal custom-modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog custom-modal-dialog">
+                                <div class="modal-content custom-modal-content">
+                                    <div class="modal-header custom-modal-header">
+                                        <h5 class="modal-title custom-modal-title" id="exampleModalLabel">Benefits of Ultrasonic Teeth Cleaning</h5>
+                                        <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body custom-modal-body">
+                                        <p><strong>Effective Plaque and Tartar Removal:</strong> Despite regular brushing and flossing, plaque and tartar can build up on the teeth over time. Ultrasonic scaling effectively removes these deposits from the tooth surfaces, including areas that are difficult to reach with traditional cleaning methods.</p>
+                                        <p><strong>Prevention of Gum Disease:</strong> Plaque and tartar buildup can lead to gum disease if left untreated. Ultrasonic cleaning helps prevent gum disease by removing the bacteria that cause inflammation and infection in the gums.</p>
+                                        <p><strong>Treatment of Periodontal Disease:</strong> For individuals with existing gum disease, ultrasonic scaling is an important part of the treatment process. It helps remove bacteria and calculus from below the gum line, reducing inflammation and promoting healing of the gums.</p>
+                                        <p><strong>Improved Oral Health:</strong> Ultrasonic cleaning not only removes plaque and tartar but also creates a smooth surface on the teeth, making it more difficult for bacteria to adhere and grow. This helps maintain optimal oral hygiene and reduces the risk of dental problems such as cavities and bad breath.</p>
+                                        <p><strong>Fresh Breath:</strong> Bacteria in plaque and tartar can contribute to bad breath. By removing these deposits from the teeth and gums, ultrasonic scaling can help eliminate the source of unpleasant odors and improve breath freshness.</p>
+                                        <p><strong>Enhanced Aesthetics:</strong> Clean, healthy teeth and gums contribute to a bright and attractive smile. Ultrasonic cleaning can help remove surface stains and discoloration, revealing a brighter and more radiant smile.</p>
+                                        <p><strong>Comfortable Treatment:</strong> Ultrasonic scaling is generally a comfortable procedure for patients. The ultrasonic scaler produces gentle vibrations that effectively break down and remove plaque and tartar without causing discomfort or damage to the teeth.</p>
+                                    </div>
+                                    <div class="modal-footer custom-modal-footer">
+                                        <button type="button" class="btn btn-secondary custom-btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <h3>Check out our professionals</h3>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/dedntist one.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Dr. Emil Patel</h5>
+                                <p>With over 15 years of experience, Dr. Patel specializes in cosmetic dentistry and smile makeovers. He believes in building strong relationships with his patients based on trust and open communication.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/dentisttwo.webp" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Dr. David Nguyen</h5>
+                                <p>With over 20 years of experience, Dr. Nguyen specializes in restorative dentistry and full-mouth reconstruction. He is known for his meticulous approach and attention to detail.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/dentistthree.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Dr. Calin Pop</h5>
+                                <p>With over 10 years of experience, Dr. Pop specializes in preventive dentistry and patient education. He is committed to empowering his patients with the knowledge they need for optimal oral health.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            
+              
+
+        </div>
+      </div>
+      <footer class="bg-body-tertiary pt-5" bis_size="{&quot;x&quot;:0,&quot;y&quot;:3263,&quot;w&quot;:1663,&quot;h&quot;:869,&quot;abs_x&quot;:0,&quot;abs_y&quot;:3323}">
+        <div class="container" bis_size="{&quot;x&quot;:231,&quot;y&quot;:3311,&quot;w&quot;:1200,&quot;h&quot;:679,&quot;abs_x&quot;:231,&quot;abs_y&quot;:3371}">
+            <div class="row pt-3 pb-4" bis_size="{&quot;x&quot;:231,&quot;y&quot;:3311,&quot;w&quot;:1200,&quot;h&quot;:131,&quot;abs_x&quot;:231,&quot;abs_y&quot;:3371}">
+                <div class="col-md-3" bis_size="{&quot;x&quot;:231,&quot;y&quot;:3327,&quot;w&quot;:300,&quot;h&quot;:83,&quot;abs_x&quot;:231,&quot;abs_y&quot;:3387}">
+                    <div class="logo">                    <img src="./img/logo.png" alt="footer logo" bis_size="{&quot;x&quot;:246,&quot;y&quot;:3327,&quot;w&quot;:242,&quot;h&quot;:52,&quot;abs_x&quot;:246,&quot;abs_y&quot;:3387}">
+                    </div>
+                </div>
+                <div class="col-md-5" bis_size="{&quot;x&quot;:531,&quot;y&quot;:3327,&quot;w&quot;:500,&quot;h&quot;:83,&quot;abs_x&quot;:531,&quot;abs_y&quot;:3387}">
+                </div>
+                <div class="col-md-4" bis_size="{&quot;x&quot;:1031,&quot;y&quot;:3327,&quot;w&quot;:400,&quot;h&quot;:83,&quot;abs_x&quot;:1031,&quot;abs_y&quot;:3387}">
+                    <form class="row row-cols-lg-auto g-2 align-items-center justify-content-end" bis_size="{&quot;x&quot;:1042,&quot;y&quot;:3319,&quot;w&quot;:378,&quot;h&quot;:76,&quot;abs_x&quot;:1042,&quot;abs_y&quot;:3379}">
+                        <div class="col-12" bis_size="{&quot;x&quot;:1078,&quot;y&quot;:3327,&quot;w&quot;:223,&quot;h&quot;:40,&quot;abs_x&quot;:1078,&quot;abs_y&quot;:3387}">
+                            <input type="email" class="form-control" placeholder="Enter email address" bis_size="{&quot;x&quot;:1082,&quot;y&quot;:3327,&quot;w&quot;:215,&quot;h&quot;:40,&quot;abs_x&quot;:1082,&quot;abs_y&quot;:3387}">
+                        </div>
+                        <div class="col-12" bis_size="{&quot;x&quot;:1301,&quot;y&quot;:3327,&quot;w&quot;:119,&quot;h&quot;:40,&quot;abs_x&quot;:1301,&quot;abs_y&quot;:3387}">
+                            <button type="submit" class="btn btn-dark m-0 " bis_size="{&quot;x&quot;:1305,&quot;y&quot;:3327,&quot;w&quot;:111,&quot;h&quot;:40,&quot;abs_x&quot;:1305,&quot;abs_y&quot;:3387}">Send email</button>
+                        </div>
+                        <div class="form-text mt-2" bis_size="{&quot;x&quot;:1132,&quot;y&quot;:3376,&quot;w&quot;:287,&quot;h&quot;:19,&quot;abs_x&quot;:1132,&quot;abs_y&quot;:3436}">Send us your email to contact you
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+            <hr bis_size="{&quot;x&quot;:246,&quot;y&quot;:3459,&quot;w&quot;:1170,&quot;h&quot;:1,&quot;abs_x&quot;:246,&quot;abs_y&quot;:3519}">
+    
+            <div class="row pt-5" bis_size="{&quot;x&quot;:231,&quot;y&quot;:3476,&quot;w&quot;:1200,&quot;h&quot;:407,&quot;abs_x&quot;:231,&quot;abs_y&quot;:3536}">
+                <div class="col-md-6 col-lg-3 mb-4" bis_size="{&quot;x&quot;:231,&quot;y&quot;:3524,&quot;w&quot;:300,&quot;h&quot;:327,&quot;abs_x&quot;:231,&quot;abs_y&quot;:3584}">
+                    <h5 class="mb-4 text-dark" bis_size="{&quot;x&quot;:246,&quot;y&quot;:3524,&quot;w&quot;:270,&quot;h&quot;:23,&quot;abs_x&quot;:246,&quot;abs_y&quot;:3584}">Interesting posts</h5>
+                    <div class="mb-4 position-relative" bis_size="{&quot;x&quot;:246,&quot;y&quot;:3579,&quot;w&quot;:270,&quot;h&quot;:103,&quot;abs_x&quot;:246,&quot;abs_y&quot;:3639}">
+                        <a href="https://en.wikipedia.org/wiki/Dentistry" class="btn-link text-dark fw-normal" bis_size="{&quot;x&quot;:246,&quot;y&quot;:3613,&quot;w&quot;:248,&quot;h&quot;:40,&quot;abs_x&quot;:246,&quot;abs_y&quot;:3673}">Dentistry</a>
+                        <ul class="nav nav-divider align-items-center small mt-2 text-body-secondary" bis_size="{&quot;x&quot;:246,&quot;y&quot;:3664,&quot;w&quot;:270,&quot;h&quot;:19,&quot;abs_x&quot;:246,&quot;abs_y&quot;:3724}">
+                            <li class="nav-item position-relative" bis_size="{&quot;x&quot;:246,&quot;y&quot;:3664,&quot;w&quot;:59,&quot;h&quot;:19,&quot;abs_x&quot;:246,&quot;abs_y&quot;:3724}">
+                                <div class="nav-link" bis_size="{&quot;x&quot;:246,&quot;y&quot;:3664,&quot;w&quot;:59,&quot;h&quot;:19,&quot;abs_x&quot;:246,&quot;abs_y&quot;:3724}">by <a href="#" class="stretched-link text-reset btn-link" bis_size="{&quot;x&quot;:264,&quot;y&quot;:3666,&quot;w&quot;:42,&quot;h&quot;:15,&quot;abs_x&quot;:264,&quot;abs_y&quot;:3726}">wiki</a>
+                                </div>
+                            </li>
+                            <li class="nav-item" bis_size="{&quot;x&quot;:306,&quot;y&quot;:3664,&quot;w&quot;:106,&quot;h&quot;:19,&quot;abs_x&quot;:306,&quot;abs_y&quot;:3724}">2010</li>
+                        </ul>
+                    </div>
+                    <div class="mb-4 position-relative" bis_size="{&quot;x&quot;:246,&quot;y&quot;:3715,&quot;w&quot;:270,&quot;h&quot;:103,&quot;abs_x&quot;:246,&quot;abs_y&quot;:3775}">
+                        <a href="https://en.wikipedia.org/wiki/Tooth_decay" class="btn-link text-dark fw-normal" bis_size="{&quot;x&quot;:246,&quot;y&quot;:3749,&quot;w&quot;:256,&quot;h&quot;:40,&quot;abs_x&quot;:246,&quot;abs_y&quot;:3809}">Decay</a>
+                        <ul class="nav nav-divider align-items-center small mt-2 text-body-secondary" bis_size="{&quot;x&quot;:246,&quot;y&quot;:3800,&quot;w&quot;:270,&quot;h&quot;:19,&quot;abs_x&quot;:246,&quot;abs_y&quot;:3860}">
+                            <li class="nav-item position-relative" bis_size="{&quot;x&quot;:246,&quot;y&quot;:3800,&quot;w&quot;:49,&quot;h&quot;:19,&quot;abs_x&quot;:246,&quot;abs_y&quot;:3860}">
+                                <div class="nav-link" bis_size="{&quot;x&quot;:246,&quot;y&quot;:3800,&quot;w&quot;:49,&quot;h&quot;:19,&quot;abs_x&quot;:246,&quot;abs_y&quot;:3860}">by <a href="#" class="stretched-link text-reset btn-link" bis_size="{&quot;x&quot;:264,&quot;y&quot;:3802,&quot;w&quot;:31,&quot;h&quot;:15,&quot;abs_x&quot;:264,&quot;abs_y&quot;:3862}">wiki</a>
+                                </div>
+                            </li>
+                            <li class="nav-item" bis_size="{&quot;x&quot;:296,&quot;y&quot;:3800,&quot;w&quot;:107,&quot;h&quot;:19,&quot;abs_x&quot;:296,&quot;abs_y&quot;:3860}">2010</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-lg-3 mb-4" bis_size="{&quot;x&quot;:531,&quot;y&quot;:3524,&quot;w&quot;:300,&quot;h&quot;:327,&quot;abs_x&quot;:531,&quot;abs_y&quot;:3584}">
+                    <h5 class="mb-4 text-dark" bis_size="{&quot;x&quot;:546,&quot;y&quot;:3524,&quot;w&quot;:270,&quot;h&quot;:23,&quot;abs_x&quot;:546,&quot;abs_y&quot;:3584}">Navigation</h5>
+                    <div class="row" bis_size="{&quot;x&quot;:531,&quot;y&quot;:3579,&quot;w&quot;:300,&quot;h&quot;:219,&quot;abs_x&quot;:531,&quot;abs_y&quot;:3639}">
+                        <div class="col-6" bis_size="{&quot;x&quot;:531,&quot;y&quot;:3579,&quot;w&quot;:150,&quot;h&quot;:219,&quot;abs_x&quot;:531,&quot;abs_y&quot;:3639}">
+                            <ul class="nav flex-column text-primary-hover" bis_size="{&quot;x&quot;:546,&quot;y&quot;:3579,&quot;w&quot;:120,&quot;h&quot;:219,&quot;abs_x&quot;:546,&quot;abs_y&quot;:3639}">
+                                <li class="nav-item" bis_size="{&quot;x&quot;:546,&quot;y&quot;:3703,&quot;w&quot;:120,&quot;h&quot;:32,&quot;abs_x&quot;:546,&quot;abs_y&quot;:3763}"><a class="nav-link" href="#" bis_size="{&quot;x&quot;:546,&quot;y&quot;:3703,&quot;w&quot;:120,&quot;h&quot;:32,&quot;abs_x&quot;:546,&quot;abs_y&quot;:3763}">Support</a></li>
+                                <li class="nav-item" bis_size="{&quot;x&quot;:546,&quot;y&quot;:3735,&quot;w&quot;:120,&quot;h&quot;:32,&quot;abs_x&quot;:546,&quot;abs_y&quot;:3795}"><a class="nav-link" href="#" bis_size="{&quot;x&quot;:546,&quot;y&quot;:3735,&quot;w&quot;:120,&quot;h&quot;:32,&quot;abs_x&quot;:546,&quot;abs_y&quot;:3795}">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                         
+                    </div>
+                </div>
+    
+                <div class="col-sm-6 col-lg-3 mb-4" bis_size="{&quot;x&quot;:831,&quot;y&quot;:3524,&quot;w&quot;:300,&quot;h&quot;:327,&quot;abs_x&quot;:831,&quot;abs_y&quot;:3584}">
+                    <h5 class="mb-4 text-dark" bis_size="{&quot;x&quot;:846,&quot;y&quot;:3524,&quot;w&quot;:270,&quot;h&quot;:23,&quot;abs_x&quot;:846,&quot;abs_y&quot;:3584}">Get Regular Updates</h5>
+                    <ul class="nav flex-column text-primary-hover" bis_size="{&quot;x&quot;:846,&quot;y&quot;:3579,&quot;w&quot;:270,&quot;h&quot;:155,&quot;abs_x&quot;:846,&quot;abs_y&quot;:3639}">
+                        <li class="nav-item" bis_size="{&quot;x&quot;:846,&quot;y&quot;:3579,&quot;w&quot;:270,&quot;h&quot;:27,&quot;abs_x&quot;:846,&quot;abs_y&quot;:3639}"><a class="nav-link pt-0" href="#" bis_size="{&quot;x&quot;:846,&quot;y&quot;:3579,&quot;w&quot;:270,&quot;h&quot;:27,&quot;abs_x&quot;:846,&quot;abs_y&quot;:3639}"><i class="fab fa-whatsapp fa-fw me-2" bis_size="{&quot;x&quot;:846,&quot;y&quot;:3582,&quot;w&quot;:18,&quot;h&quot;:15,&quot;abs_x&quot;:846,&quot;abs_y&quot;:3642}"></i>WhatsApp</a></li>
+                        <li class="nav-item" bis_size="{&quot;x&quot;:846,&quot;y&quot;:3607,&quot;w&quot;:270,&quot;h&quot;:32,&quot;abs_x&quot;:846,&quot;abs_y&quot;:3667}"><a class="nav-link" href="#" bis_size="{&quot;x&quot;:846,&quot;y&quot;:3607,&quot;w&quot;:270,&quot;h&quot;:32,&quot;abs_x&quot;:846,&quot;abs_y&quot;:3667}"><i class="fab fa-youtube fa-fw me-2" bis_size="{&quot;x&quot;:846,&quot;y&quot;:3615,&quot;w&quot;:18,&quot;h&quot;:15,&quot;abs_x&quot;:846,&quot;abs_y&quot;:3675}"></i>YouTube</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-sm-6 col-lg-3 mb-4" bis_size="{&quot;x&quot;:1131,&quot;y&quot;:3524,&quot;w&quot;:300,&quot;h&quot;:327,&quot;abs_x&quot;:1131,&quot;abs_y&quot;:3584}">
+                    <h5 class="mb-4 text-white" bis_size="{&quot;x&quot;:1146,&quot;y&quot;:3524,&quot;w&quot;:270,&quot;h&quot;:23,&quot;abs_x&quot;:1146,&quot;abs_y&quot;:3584}">Our mobile App</h5>
+                    <p class="text-body-secondary" bis_size="{&quot;x&quot;:1146,&quot;y&quot;:3579,&quot;w&quot;:270,&quot;h&quot;:67,&quot;abs_x&quot;:1146,&quot;abs_y&quot;:3639}">Download our App.</p>
+                    <div class="row g-2" bis_size="{&quot;x&quot;:1142,&quot;y&quot;:3655,&quot;w&quot;:278,&quot;h&quot;:48,&quot;abs_x&quot;:1142,&quot;abs_y&quot;:3715}">
+                        <div class="col" bis_size="{&quot;x&quot;:1142,&quot;y&quot;:3663,&quot;w&quot;:139,&quot;h&quot;:40,&quot;abs_x&quot;:1142,&quot;abs_y&quot;:3723}">
+                            <a href="#" bis_size="{&quot;x&quot;:1146,&quot;y&quot;:3673,&quot;w&quot;:131,&quot;h&quot;:18,&quot;abs_x&quot;:1146,&quot;abs_y&quot;:3733}"><img class="w-100" src="./img/app.png" alt="app-store" bis_size="{&quot;x&quot;:1146,&quot;y&quot;:3663,&quot;w&quot;:131,&quot;h&quot;:40,&quot;abs_x&quot;:1146,&quot;abs_y&quot;:3723}"></a>
+                        </div>
+                        <div class="col" bis_size="{&quot;x&quot;:1281,&quot;y&quot;:3663,&quot;w&quot;:139,&quot;h&quot;:40,&quot;abs_x&quot;:1281,&quot;abs_y&quot;:3723}">
+                            <a href="#" bis_size="{&quot;x&quot;:1285,&quot;y&quot;:3673,&quot;w&quot;:131,&quot;h&quot;:18,&quot;abs_x&quot;:1285,&quot;abs_y&quot;:3733}"><img class="w-100" src="./img/play.png" alt="google-play" bis_size="{&quot;x&quot;:1285,&quot;y&quot;:3663,&quot;w&quot;:131,&quot;h&quot;:40,&quot;abs_x&quot;:1285,&quot;abs_y&quot;:3723}"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            
+        </div>
+    
+        <div class="bg-dark-overlay-3 mt-5" bis_size="{&quot;x&quot;:0,&quot;y&quot;:4039,&quot;w&quot;:1663,&quot;h&quot;:94,&quot;abs_x&quot;:0,&quot;abs_y&quot;:4099}">
+            <div class="container" bis_size="{&quot;x&quot;:231,&quot;y&quot;:4039,&quot;w&quot;:1200,&quot;h&quot;:94,&quot;abs_x&quot;:231,&quot;abs_y&quot;:4099}">
+                <div class="row align-items-center justify-content-md-between py-4" bis_size="{&quot;x&quot;:231,&quot;y&quot;:4039,&quot;w&quot;:1200,&quot;h&quot;:94,&quot;abs_x&quot;:231,&quot;abs_y&quot;:4099}">
+                    <div class="col-md-6" bis_size="{&quot;x&quot;:231,&quot;y&quot;:4075,&quot;w&quot;:600,&quot;h&quot;:22,&quot;abs_x&quot;:231,&quot;abs_y&quot;:4135}">
+                        <div class="text-center text-md-start text-primary-hover text-body-secondary" bis_size="{&quot;x&quot;:246,&quot;y&quot;:4075,&quot;w&quot;:570,&quot;h&quot;:22,&quot;abs_x&quot;:246,&quot;abs_y&quot;:4135}">©2024 <a href="#" class="text-reset btn-link" target="_blank" bis_size="{&quot;x&quot;:298,&quot;y&quot;:4077,&quot;w&quot;:71,&quot;h&quot;:18,&quot;abs_x&quot;:298,&quot;abs_y&quot;:4137}">Academy Step</a>. All rights reserved
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-sm-flex align-items-center justify-content-center justify-content-md-end" bis_size="{&quot;x&quot;:831,&quot;y&quot;:4071,&quot;w&quot;:600,&quot;h&quot;:30,&quot;abs_x&quot;:831,&quot;abs_y&quot;:4131}">
+                        <div class="dropup me-0 me-sm-3 mt-3 mt-md-0 text-center text-sm-end" bis_size="{&quot;x&quot;:1072,&quot;y&quot;:4075,&quot;w&quot;:119,&quot;h&quot;:22,&quot;abs_x&quot;:1072,&quot;abs_y&quot;:4135}">
+                            <a class="dropdown-toggle text-primary-hover" href="#" role="button" id="languageSwitcher" data-bs-toggle="dropdown" aria-expanded="false" bis_size="{&quot;x&quot;:1072,&quot;y&quot;:4077,&quot;w&quot;:119,&quot;h&quot;:18,&quot;abs_x&quot;:1072,&quot;abs_y&quot;:4137}">
+                                English Edition
+                            </a>
+                            <ul class="dropdown-menu min-w-auto" aria-labelledby="languageSwitcher" bis_size="{&quot;x&quot;:0,&quot;y&quot;:1800,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:0,&quot;abs_y&quot;:1860}">
+                                <li bis_size="{&quot;x&quot;:0,&quot;y&quot;:1800,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:0,&quot;abs_y&quot;:1860}"><a class="dropdown-item" href="#" bis_size="{&quot;x&quot;:0,&quot;y&quot;:1800,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:0,&quot;abs_y&quot;:1860}">English</a></li>
+                                <li bis_size="{&quot;x&quot;:0,&quot;y&quot;:1800,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:0,&quot;abs_y&quot;:1860}"><a class="dropdown-item" href="#" bis_size="{&quot;x&quot;:0,&quot;y&quot;:1800,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:0,&quot;abs_y&quot;:1860}">German </a></li>
+                                <li bis_size="{&quot;x&quot;:0,&quot;y&quot;:1800,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:0,&quot;abs_y&quot;:1860}"><a class="dropdown-item" href="#" bis_size="{&quot;x&quot;:0,&quot;y&quot;:1800,&quot;w&quot;:0,&quot;h&quot;:0,&quot;abs_x&quot;:0,&quot;abs_y&quot;:1860}">Ukrainian</a></li>
+                            </ul>
+                        </div>
+                        <ul class="nav text-primary-hover text-center text-sm-end justify-content-center justify-content-center mt-3 mt-md-0" bis_size="{&quot;x&quot;:1207,&quot;y&quot;:4071,&quot;w&quot;:208,&quot;h&quot;:30,&quot;abs_x&quot;:1207,&quot;abs_y&quot;:4131}">
+                            <li class="nav-item" bis_size="{&quot;x&quot;:1207,&quot;y&quot;:4071,&quot;w&quot;:66,&quot;h&quot;:30,&quot;abs_x&quot;:1207,&quot;abs_y&quot;:4131}"><a class="nav-link" href="#" bis_size="{&quot;x&quot;:1207,&quot;y&quot;:4071,&quot;w&quot;:66,&quot;h&quot;:30,&quot;abs_x&quot;:1207,&quot;abs_y&quot;:4131}">Terms</a></li>
+                            <li class="nav-item" bis_size="{&quot;x&quot;:1274,&quot;y&quot;:4071,&quot;w&quot;:75,&quot;h&quot;:30,&quot;abs_x&quot;:1274,&quot;abs_y&quot;:4131}"><a class="nav-link" href="#" bis_size="{&quot;x&quot;:1274,&quot;y&quot;:4071,&quot;w&quot;:75,&quot;h&quot;:30,&quot;abs_x&quot;:1274,&quot;abs_y&quot;:4131}">Privacy</a></li>
+                            <li class="nav-item" bis_size="{&quot;x&quot;:1349,&quot;y&quot;:4071,&quot;w&quot;:66,&quot;h&quot;:30,&quot;abs_x&quot;:1349,&quot;abs_y&quot;:4131}"><a class="nav-link pe-0" href="#" bis_size="{&quot;x&quot;:1349,&quot;y&quot;:4071,&quot;w&quot;:66,&quot;h&quot;:30,&quot;abs_x&quot;:1349,&quot;abs_y&quot;:4131}">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

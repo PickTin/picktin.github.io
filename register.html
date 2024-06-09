@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register to doctor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h2, h4, h5 {
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <div class="logo"><img src="./img/logo.png" alt=""></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="./contacts.html">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="./reviews.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="./about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Doctor Appointment</h1>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="mb-3">
+                <label for="doctor" class="form-label">Select Doctor</label>
+                <select class="form-select" id="doctor">
+                    <option selected>Select a doctor</option>
+                    <option value="1">Dr. Emil Patel</option>
+                    <option value="2">Dr. David Nguyen</option>
+                    <option value="3">Dr. Calin Pop</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Date and Time</label>
+                <input type="datetime-local" class="form-control" id="date">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Additional information"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+    <footer class="bg-primary pt-5" bis_size="{&quot;x&quot;:0,&quot;y&quot;:3263,&quot;w&quot;:1663,&quot;h&quot;:869,&quot;abs_x&quot;:0,&quot;abs_y&quot;:3323}">
+        <div class="container" bis_size="{&quot;x&quot;:231,&quot;y&quot;:3311,&quot;w&quot;:1200,&quot;h&quot;:679,&quot;abs_x&quot;:231,&quot;abs_y&quot;:3371}">
+            <div class="row pt-3 pb-4" bis_size="{&quot;x&quot;:231,&quot;y&quot;:3311,&quot;w&quot;:1200,&quot;h&quot;:131,&quot;abs_x&quot;:231,&quot;abs_y&quot;:3371}">
+                <div class="col-md-3" bis_size="{&quot;x&quot;:231,&quot;y&quot;:3327,&quot;w&quot;:300,&quot;h&quot;:83,&quot;abs_x&quot;:231,&quot;abs_y&quot;:3387}">
+                    <div class="logo">                    <img src="./img/logo.png" alt="footer logo" bis_size="{&quot;x&quot;:246,&quot;y&quot;:3327,&quot;w&quot;:242,&quot;h&quot;:52,&quot;abs_x&quot;:246,&quot;abs_y&quot;:3387}">
+                    </div>
+                </div>
+                <div class="col-md-5" bis_size="{&quot;x&quot;:531,&quot;y&quot;:3327,&quot;w&quot;:500,&quot;h&quot;:83,&quot;abs_x&quot;:531,&quot;abs_y&quot;:3387}">
+                </div>
+                <div class="col-md-4" bis_size="{&quot;x&quot;:1031,&quot;y&quot;:3327,&quot;w&quot;:400,&quot;h&quot;:83,&quot;abs_x&quot;:1031,&quot;abs_y&quot;:3387}">
+                    <form class="row row-cols-lg-auto g-2 align-items-center justify-content-end" bis_size="{&quot;x&quot;:1042,&quot;y&quot;:3319,&quot;w&quot;:378,&quot;h&quot;:76,&quot;abs_x&quot;:1042,&quot;abs_y&quot;:3379}">
+                        <div class="col-12" bis_size="{&quot;x&quot;:1078,&quot;y&quot;:3327,&quot;w&quot;:223,&quot;h&quot;:40,&quot;abs_x&quot;:1078,&quot;abs_y&quot;:3387}">
+                            <input type="email" class="form-control" placeholder="Enter email address" bis_size="{&quot;x&quot;:1082,&quot;y&quot;:3327,&quot;w&quot;:215,&quot;h&quot;:40,&quot;abs_x&quot;:1082,&quot;abs_y&quot;:3387}">
+                        </div>
+                        <div class="col-12" bis_size="{&quot;x&quot;:1301,&quot;y&quot;:3327,&quot;w&quot;:119,&quot;h&quot;:40,&quot;abs_x&quot;:1301,&quot;abs_y&quot;:3387}">
+                            <button type="submit" class="btn btn-dark m-0 " bis_size="{&quot;x&quot;:1305,&quot;y&quot;:3327,&quot;w&quot;:111,&quot;h&quot;:40,&quot;abs_x&quot;:1305,&quot;abs_y&quot;:3387}">Send email</button>
+                        </div>
+                        <div class="form-text mt-2" bis_size="{&quot;x&quot;:1132,&quot;y&quot;:3376,&quot;w&quot;:287,&quot;h&quot;:19,&quot;abs_x&quot;:1132,&quot;abs_y&quot;:3436}">Send us your email to contact you
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+            <hr bis_size="{&quot;x&quot;:246,&quot;y&quot;:3459,&quot;w&quot;:1170,&quot;h&quot;:1,&quot;abs_x&quot;:246,&quot;abs_y&quot;:3519}">
+    
+            <div class="row pt-5" bis_size="{&quot;x&quot;:231,&quot;y&quot;:3476,&quot;w&quot;:1200,&quot;h&quot;:407,&quot;abs_x&quot;:231,&quot;abs_y&quot;:3536}">
+    
+                
+    
+                
+    
+                <div class="col-sm-6 col-lg-3 mb-4" bis_size="{&quot;x&quot;:1131,&quot;y&quot;:3524,&quot;w&quot;:300,&quot;h&quot;:327,&quot;abs_x&quot;:1131,&quot;abs_y&quot;:3584}">
+                    <h5 class="mb-4 text-white" bis_size="{&quot;x&quot;:1146,&quot;y&quot;:3524,&quot;w&quot;:270,&quot;h&quot;:23,&quot;abs_x&quot;:1146,&quot;abs_y&quot;:3584}">Our mobile App</h5>
+                    <p class="text-body-secondary" bis_size="{&quot;x&quot;:1146,&quot;y&quot;:3579,&quot;w&quot;:270,&quot;h&quot;:67,&quot;abs_x&quot;:1146,&quot;abs_y&quot;:3639}">Download our App.</p>
+                    <div class="row g-2" bis_size="{&quot;x&quot;:1142,&quot;y&quot;:3655,&quot;w&quot;:278,&quot;h&quot;:48,&quot;abs_x&quot;:1142,&quot;abs_y&quot;:3715}">
+                        <div class="col" bis_size="{&quot;x&quot;:1142,&quot;y&quot;:3663,&quot;w&quot;:139,&quot;h&quot;:40,&quot;abs_x&quot;:1142,&quot;abs_y&quot;:3723}">
+                            <a href="#" bis_size="{&quot;x&quot;:1146,&quot;y&quot;:3673,&quot;w&quot;:131,&quot;h&quot;:18,&quot;abs_x&quot;:1146,&quot;abs_y&quot;:3733}"><img class="w-100" src="./img/app.png" alt="app-store" bis_size="{&quot;x&quot;:1146,&quot;y&quot;:3663,&quot;w&quot;:131,&quot;h&quot;:40,&quot;abs_x&quot;:1146,&quot;abs_y&quot;:3723}"></a>
+                        </div>
+                        <div class="col" bis_size="{&quot;x&quot;:1281,&quot;y&quot;:3663,&quot;w&quot;:139,&quot;h&quot;:40,&quot;abs_x&quot;:1281,&quot;abs_y&quot;:3723}">
+                            <a href="#" bis_size="{&quot;x&quot;:1285,&quot;y&quot;:3673,&quot;w&quot;:131,&quot;h&quot;:18,&quot;abs_x&quot;:1285,&quot;abs_y&quot;:3733}"><img class="w-100" src="./img/play.png" alt="google-play" bis_size="{&quot;x&quot;:1285,&quot;y&quot;:3663,&quot;w&quot;:131,&quot;h&quot;:40,&quot;abs_x&quot;:1285,&quot;abs_y&quot;:3723}"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            
+        </div>
+    
+        <div class="bg-dark-overlay-3 mt-5" bis_size="{&quot;x&quot;:0,&quot;y&quot;:4039,&quot;w&quot;:1663,&quot;h&quot;:94,&quot;abs_x&quot;:0,&quot;abs_y&quot;:4099}">
+            <div class="container" bis_size="{&quot;x&quot;:231,&quot;y&quot;:4039,&quot;w&quot;:1200,&quot;h&quot;:94,&quot;abs_x&quot;:231,&quot;abs_y&quot;:4099}">
+                <div class="row align-items-center justify-content-md-between py-4" bis_size="{&quot;x&quot;:231,&quot;y&quot;:4039,&quot;w&quot;:1200,&quot;h&quot;:94,&quot;abs_x&quot;:231,&quot;abs_y&quot;:4099}">
+                    <div class="col-md-6" bis_size="{&quot;x&quot;:231,&quot;y&quot;:4075,&quot;w&quot;:600,&quot;h&quot;:22,&quot;abs_x&quot;:231,&quot;abs_y&quot;:4135}">
+                        <div class="text-center text-md-start text-primary-hover text-body-secondary" bis_size="{&quot;x&quot;:246,&quot;y&quot;:4075,&quot;w&quot;:570,&quot;h&quot;:22,&quot;abs_x&quot;:246,&quot;abs_y&quot;:4135}">©2024 <a href="#" class="text-reset btn-link" target="_blank" bis_size="{&quot;x&quot;:298,&quot;y&quot;:4077,&quot;w&quot;:71,&quot;h&quot;:18,&quot;abs_x&quot;:298,&quot;abs_y&quot;:4137}">Academy Step</a>. All rights reserved
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-sm-flex align-items-center justify-content-center justify-content-md-end" bis_size="{&quot;x&quot;:831,&quot;y&quot;:4071,&quot;w&quot;:600,&quot;h&quot;:30,&quot;abs_x&quot;:831,&quot;abs_y&quot;:4131}">
+                        
+                        <ul class="nav text-white text-center text-sm-end justify-content-center justify-content-center mt-3 mt-md-0" bis_size="{&quot;x&quot;:1207,&quot;y&quot;:4071,&quot;w&quot;:208,&quot;h&quot;:30,&quot;abs_x&quot;:1207,&quot;abs_y&quot;:4131}">
+                            <li class="nav-item" bis_size="{&quot;x&quot;:1207,&quot;y&quot;:4071,&quot;w&quot;:66,&quot;h&quot;:30,&quot;abs_x&quot;:1207,&quot;abs_y&quot;:4131}"><a class="nav-link text-white" href="./contacts.html" bis_size="{&quot;x&quot;:1207,&quot;y&quot;:4071,&quot;w&quot;:66,&quot;h&quot;:30,&quot;abs_x&quot;:1207,&quot;abs_y&quot;:4131}">Where to find us</a></li>
+                            <li class="nav-item" bis_size="{&quot;x&quot;:1207,&quot;y&quot;:4071,&quot;w&quot;:66,&quot;h&quot;:30,&quot;abs_x&quot;:1207,&quot;abs_y&quot;:4131}"><a class="nav-link text-white" href="#" bis_size="{&quot;x&quot;:1207,&quot;y&quot;:4071,&quot;w&quot;:66,&quot;h&quot;:30,&quot;abs_x&quot;:1207,&quot;abs_y&quot;:4131}">Terms</a></li>
+                            <li class="nav-item" bis_size="{&quot;x&quot;:1274,&quot;y&quot;:4071,&quot;w&quot;:75,&quot;h&quot;:30,&quot;abs_x&quot;:1274,&quot;abs_y&quot;:4131}"><a class="nav-link text-white" href="#" bis_size="{&quot;x&quot;:1274,&quot;y&quot;:4071,&quot;w&quot;:75,&quot;h&quot;:30,&quot;abs_x&quot;:1274,&quot;abs_y&quot;:4131}">Privacy</a></li>
+                            <li class="nav-item" bis_size="{&quot;x&quot;:1349,&quot;y&quot;:4071,&quot;w&quot;:66,&quot;h&quot;:30,&quot;abs_x&quot;:1349,&quot;abs_y&quot;:4131}"><a class="nav-link pe-0 text-white" href="#" bis_size="{&quot;x&quot;:1349,&quot;y&quot;:4071,&quot;w&quot;:66,&quot;h&quot;:30,&quot;abs_x&quot;:1349,&quot;abs_y&quot;:4131}">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+@primary-color: #007bff;
+@secondary-color: #6c757d;
+@backgroundColor: rgb(208, 208, 208);
+@logoSize: 80px; 
+@imgSize: 100%;
+@cardBorder: 6%;
+@boxShd:  0 0 10px rgba(0, 20, 118, 0.688);
+@tertiary: #e9ecef;
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(./img/bg.jpg);
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.card {
+    margin-bottom: 1.5rem;
+}
+
+.card-title {
+    color: @primary-color;
+}
+
+.btn-primary {
+    background-color: @primary-color;
+    border-color: @primary-color;
+}
+
+.btn-primary:hover {
+    background-color: darken(@primary-color, 10%);
+    border-color: darken(@primary-color, 10%);
+}
+.image
+{
+    height: 50px;
+    width: 50px;
+}
+.image > img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+.card-title
+{
+    float: left;
+}
+.form-group
+{
+    margin-bottom: 15px;
+}
+.logo
+{
+    height: @logoSize;
+    width: @logoSize;
+}
+.logo > img
+{
+    height: @imgSize;
+    width: @imgSize;
+}
